@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Sans+Narrow|Open+Sans:300" />
+    <link rel="stylesheet" href="./css/highlight/monokai.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/presentacion.css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Software de Planificación Docente</title>
+    <style>
+        p {
+            text-align: justify;
+        }
+        
+        p#in-tesis {
+            font-size: 35px;
+            text-align: center;
+            color: -moz-linear-gradient(#1E1E94, #1E1E94);
+            color: -webkit-linear-gradient(#1E1E94, #1E1E94);
+            color: linear-gradient(#1E1E94, #1E1E94);
+        }
+        
+        a:visited {
+            text-decoration: none;
+        }
+        
+        a:active {
+            text-decoration: none;
+        }
+        
+        .cen {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="impress" class="impress-not-supported">
+        <div id="inicio" class="step" data-x="0" data-y="0" style="text-align: center;">
+            <h5>Lugares Turísticos de la Compañía de Cabañas</h5>
+            <!--<p id="in-tesis">Turismo Cabañas</p>-->
+            <p id="in-tesis">Integrantes </p>
+            <p id="in-tesis">- Elvira González</p>
+            <p id="in-tesis">- Julo César Saucedo</p>
+            <p id="in-tesis">- Jean Paul Saucedo</p>
+            <p id="in-tesis">- Natalia López</p>
+            <p id="in-tesis">Prof: Cristina Gayoso</p>
+        </div>
+
+        <div id="slide1" class="step slide page-body" data-x="4000" data-y="400" data-z="2000">
+            <h1>Lugares Turísticos de la Compañía de Cabañas</h1>
+        </div>
+        <div id="slide2" class="step slide page-body" data-x="2000" data-y="150">
+            <h2>Viveros</h2>
+            <p>Sobre la ruta a cabañas se encuentran varios viveros con distintos tipos de plantas. La realidad social es que cada vivero recibe la visita de varios clientes de la zona y de otros lugares. Pudimos observar variados tipos de plantas como:
+                flores de copa de vino con un color rojo oscuro, rojo pana, orquídeas, mariposas, entre otras clases de flores, con espina, pino, macetas, entre otros más.
+            </p>
+        </div>
+        <div id="slide3" class="step slide page-body" data-x="4000" data-y="400" data-z="2000">
+            <h2>Viveros</h2>
+            <p>Los costos de los productos varían desde 10 mil guaraníes en adelante. Las actividades realizadas en el lugar son: Exposición de flores llamado Yvoty Rape, festivales, etc. Otros eventos que se podrían desarrollar son: Circuito de las flores
+                en las veredas hermoseando la ciudad, festivales con varios artistas, entrevistas a productores del lugar promocionando sus productos a través de videos publicitarios.
+            </p>
+        </div>
+        <div id="slide4" class="step slide page-body" data-x="6000" data-y="800" data-z="5000">
+            <h2>Imágenes</h2>
+            <center><img src="./img/vivero1.jpg"></center>
+            <center>
+                <p class="cen">Variados tipos de flores</p>
+            </center>
+        </div>
+        <div id="slide5" class="step slide page-body" data-x="8000" data-y="1000" data-z="5000">
+            <h2>Imágenes</h2>
+            <center><img src="./img/vivero2.jpg"></center>
+            <center>
+                <p class="cen">Plantas de jardín</p>
+            </center>
+        </div>
+        <div id="slide6" class="step slide page-body" data-x="9000" data-y="1500" data-z="5000">
+            <h2>Imágenes</h2>
+            <center><img src="./img/vivero3.jpg"></center>
+            <center>
+                <p class="cen">Vivero de cabañas </p>
+            </center>
+        </div>
+        <div id="slide7" class="step slide page-body" data-x="11000" data-y="1700" data-z="5000">
+            <h2>Tape tuja</h2>
+            <p>Es un camino que se encuentra terminando Cabañas y cruzando Atyrá. Empedrado de gran tamaño que construyeron los presos bolivianos durante la guerra del Chaco. Se puede observar por ejemplo motocicletas utilizando el camino como atajo para
+                llegar a la ruta 2 y varios otros móviles.
+            </p>
+            <p>También existen árboles que dan sombra a lo largo del camino. Las calles con empedrados con una buena variedad de plantas a su alrededor y pequeñas avenidas. Las actividades que se podrían realizar son carrera a caballos, feria de plantas
+                de viveros, etc.
+            </p>
+        </div>
+        <div id="slide8" class="step slide page-body" data-x="13000" data-y="1900" data-z="5000">
+            <h2>Imágenes</h2>
+            <center><img src="./img/vivero5.jpg"></center>
+            <p class="cen">Calles del lugar</p>
+        </div>
+        <div id="slide9" class="step slide page-body" data-x="9000" data-y="2100" data-z="10000">
+            <h2>Imágenes</h2>
+            <center><img src="./img/tape.jpg"></center>
+            <center>
+                <p class="cen">Paisaje del camino que va a la ruta 2</p>
+            </center>
+        </div>
+    </div>
+    <div class="arrow-wrapper">
+        <a id="arrowLeft" class="arrow">&lt</a>
+        <a id="arrowRight" class="arrow">&gt</a>
+    </div>
+
+    <script src="js/zoom.js"></script>
+    <script>
+        document.querySelector('.page-body').addEventListener('click', function(event) {
+            event.preventDefault();
+            zoom.to({
+                element: event.target
+            });
+        });
+    </script>
+    <script src="js/highlight.pack.js"></script>
+    <script src="js/impress.js"></script>
+    <script>
+        impress().init();
+    </script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
